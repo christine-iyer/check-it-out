@@ -1,27 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Table from './components/Table';
+import props from './Data';
 
 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// console.log(cards);
+
+export default function App(props) {
+	
+	return (
+		<Table striped bordered hover size="sm">
+		  <thead>
+		    <tr>
+			 <th>class</th>
+			 <th>prodInventoryName</th>
+			 <th>detail</th>
+			 <th>prodX</th>
+			 <th>unitMeas</th>
+			 <th>unitNow</th>
+			 <th>unitCost</th>
+			 <th>cost</th>
+			 <th>recipes</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+			 <td>{props.class}</td>
+			 <td>{props.prodInventoryName}</td>
+			 <td>{props.detail}</td>
+			 <td>{props.prodX}</td>
+			 <td>{props.unitMeas}</td>
+			 <td>{props.unitNow}</td>
+			 <td>{props.unitCost}</td>
+			 <td>{props.cost}</td>
+			 <td>{props.recipes}</td>
+		    </tr>
+		    
+		  </tbody>
+		</Table>
+	   );
 }
 
-export default App;
