@@ -1,5 +1,5 @@
 
-const cardsArr= [
+const data= [
      {
          "class": "Inventory-Supplies Plant Growth",
          "prodInventoryName": "Supplies Plant Growth",
@@ -3456,4 +3456,4 @@ const cardsArr= [
      }
  ]
 
-export default cardsArr;
+export default data;

@@ -1,26 +1,24 @@
 import './App.css';
+//import Item from './components/Item';
+import data from './data';
+import columns from './columns';
+import DataTable from 'react-data-table-component';
 
-// import Nav from './Nav';
-// import Footer from './Footer';
-// import Article from './Article';
-import Item from './components/Item';
-import cardsArr from './Data';
-import { Card } from 'react-bootstrap';
-
-
-const cards = cardsArr.map((ele, idx) => {
-	return (
-		<Item
-		{...ele}
-			key={idx}
-		/>
-	);
-});
+// const cards = cardsArr.map((ele, idx) => {
+// 	return (
+// 		<Item
+// 			{...ele}
+// 			key={idx}
+// 		/>
+// 	);
+// });
 
 export default function App() {
 	return (
 		<div className="App">
-			<>{cards}</>
+			<DataTable
+			columns={columns}
+			data={data} />
 		</div>
 	);
 }
