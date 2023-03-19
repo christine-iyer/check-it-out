@@ -7,6 +7,7 @@ export default function Table(props) {
     <Table striped bordered hover size="sm">
       <thead>
         <tr>
+        <th>index</th>
           <th>class</th>
           <th>prodInventoryName</th>
           <th>detail</th>
@@ -20,6 +21,7 @@ export default function Table(props) {
       </thead>
       <tbody>
         <tr>
+        <td>{props.index}</td>
           <td>{props.class}</td>
           <td>{props.prodInventoryName}</td>
           <td>{props.detail}</td>
