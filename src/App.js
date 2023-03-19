@@ -5,7 +5,7 @@ import './App.css';
 // import Article from './Article';
 import Item from './components/Item';
 import cardsArr from './Data';
-import Table from './components/Table'
+
 
 const cards = cardsArr.map((ele, idx) => {
 	return (
@@ -30,7 +30,7 @@ const cards = cardsArr.map((ele, idx) => {
 export default function App() {
 	return (
 		<div className="App">
-			<Table>{cards}</Table>
+			<>{cards}</>
 		</div>
 	);
 }

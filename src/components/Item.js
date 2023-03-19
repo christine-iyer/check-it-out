@@ -5,7 +5,7 @@ import CardImage from './CardImage';
 export default function Item(props) {
 	return (
 		<div className="card" style={{ width: '18rem' }}>
-			<CardImage detail={props.detail} prodX={props.prodX} />
+			<CardImage detail={props.detail} prodInventoryName={props.prodInventoryName} />
 			<CardBody unitCost={props.unitCost} unitMeas={props.unitMeas} />
 		</div>
 	);
