@@ -17,8 +17,6 @@ const cards = cardsArr.map((ele, idx) => {
 	);
 });
 
-// console.log(cards);
-
 export default function App() {
 	return (
 		<div className="App">
