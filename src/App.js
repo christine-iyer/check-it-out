@@ -4,7 +4,7 @@ import React from 'react';
 import data from './data';
 import columns from './columns';
 import DataTable from 'react-data-table-component';
-import { customSort, customStyles, conditionalRowStyles, resetPaginationToggle, selectableRows } from 'lodash'
+import { customSort, customStyles, conditionalRowStyles, resetPaginationToggle } from 'lodash'
 
 export default function App() {
 	const [selectedRows, setSelectedRows] = React.useState(false);

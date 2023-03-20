@@ -1,4 +1,34 @@
-# Getting Started with Create React App
+# Sending emails from node. 
+[w3 instructions](https://www.w3schools.com/nodejs/nodejs_email.asp)
+
+```JS
+var nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  host: 'smtp.gmail.com',
+  auth: {
+    user: 'edithbird5@gmail.com',
+    pass: 'cozjikjcjyflmtgl'
+  }
+});
+
+var mailOptions = {
+  from: 'edithbird5@gmail.com',
+  to: 'devonmaimes@gmail.com',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
+};
+
+transporter.sendMail(mailOptions, function(error, info) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+```
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
